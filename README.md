@@ -1,5 +1,6 @@
 # analyzeC19D
-analyze
+analyzeC19D is a R function for graph-based analysis and visualization of Italian COVID-19 data.
+
 
 
 Hospitalised with Symptoms (hs)
