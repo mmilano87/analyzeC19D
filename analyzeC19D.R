@@ -1895,11 +1895,15 @@ Veneto =round(ven1, digits = 2)
 totale=cbind(Abruzzo,	Basilicata,	Bolzano,	Calabria,	Campania,	Emilia,	Friuli, 	Lazio,	Liguria,	Lombardia,	Marche,	Molise,	Piemonte,	Puglia,	Sardegna,	Sicilia,	Toscana,	Trento,	Umbria,	ValleAosta,	Veneto)
 
 
+regions=c("Abruzzo",	"Basilicata",	"Bolzano",	"Calabria",	"Campania",	"Emilia",	"Friuli", 	"Lazio",	"Liguria",	"Lombardia",	"Marche",	"Molise",	"Piemonte",	"Puglia",	"Sardegna",	"Sicilia",	"Toscana",	"Trento",	"Umbria",	"ValleAosta",	"Veneto")
+
+totale=cbind(regions, totale)
+
 write.table(totale,"~/Desktop/simR.txt",append = FALSE, quote = FALSE,row.names=FALSE, sep="\t")
 
-M1=read.table("~/Desktop/simR.txt", header = TRUE, sep = "\t",row.names=NULL);
 
- M1=as.matrix(M1);
+
+ M1=as.matrix(totale);
     
    
     
