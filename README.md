@@ -1,7 +1,7 @@
-# analyzeC19D
+# CCTV
 
 Type function
-Title analyzeC19D
+Title CCTV
 Version 1
 Date 2020-05-1
 Author Marianna Milano,
@@ -10,7 +10,7 @@ Description An R-Package R function for graph-based analysis and visualization o
 License GPL (>=2)
 Depends R (>= 3.1.0),igraph package.
 
- analyzeC19D is a R function for graph-based analysis and visualization of Italian COVID-19 data.
+ CCTV is a R function for graph-based analysis and visualization of Italian COVID-19 data.
 The dataset, that is provided for each Italian region, consist of:
 Hospitalised with Symptoms (hs)
 Intensive Care (ic)
@@ -26,7 +26,7 @@ Total Cases (tc)
 An example of dataset is reported in dataset.txt file.
 
 
-AnalyzeC19D function takes as input a list of Italin Region associated with  Hospitalised with Symptoms (recall with id:hs)
+CCTV function takes as input a list of Italin Region associated with  Hospitalised with Symptoms (recall with id:hs)
 Intensive Care (recall with id:ic), Total Hospitalised (recall with id:th), Home Isolation (recall with id:hi), Total Currently Positive (recall with id:tcp), New Currently Positive (recall with id:ncp), Discharged/ Healed (recall with id:dh), Deceased (recall with id:d),Total Cases (recall with id:tc),Swabs (recall with id:sw).
 The user selects the id according to the type of data that he/she want analyze.
 AnalyzeC19D function  builts a similarity matrix M(i,j) where the (i,j) value of the matrix for data
@@ -36,8 +36,9 @@ AnalyzeC19D function  builts a similarity matrix M(i,j) where the (i,j) value of
 207 respect to that measure. We used the usual significance threshold of 0.05, thus matrices report only
 208 p   vales >= 0.05, while p   values < 0.05 are mapped to zero. In such a way the p-value is used as a
 209 similarity measure.
-AnalyzeC19D function write the similarity matrix in  simR.txt.
-After that, AnalyzeC19D function  maps each matrix M(i,j) to a network N starting from the result of Wilcoxon test. The nodes of the networks are the Italian regions and the edges connects two regions (i,j) if the p-value in
+CCTV function write the similarity matrix in  simR.txt.
+After that, CCTV function  maps each matrix M(i,j) to a network N starting from the result of Wilcoxon test. The nodes of the networks are the Italian regions and the edges connects two regions (i,j) if the p-value in
  the similarity matrix is greater than the threshold, otherwise (p-value < 0.05) there is not connection
- among nodes. AnalyzeC19D enables the visualization of the network.
- Finally, AnalyzeC19D  detects the communities on the network by applying an Walktrap community detection algorithm.  AnalyzeC19D enables the visualization of the communities.
+ among nodes.
+ CCTV enables the visualization of the network.
+ Finally, CCTV  detects the communities on the network by applying an Walktrap community detection algorithm.  CCTV enables the visualization of the communities.
