@@ -26,7 +26,7 @@ Total Cases (tc)
 An example of dataset is reported in dataset.txt file.
 
 
-CCTV function takes as input a list of Italin Region associated with  Hospitalised with Symptoms (recall with id:hs)
+CCTV function takes as input a list of Italian Region associated with  Hospitalised with Symptoms (recall with id:hs)
 Intensive Care (recall with id:ic), Total Hospitalised (recall with id:th), Home Isolation (recall with id:hi), Total Currently Positive (recall with id:tcp), New Currently Positive (recall with id:ncp), Discharged/ Healed (recall with id:dh), Deceased (recall with id:d),Total Cases (recall with id:tc),Swabs (recall with id:sw).
 The user selects the id according to the type of data that he/she want analyze.
 AnalyzeC19D function  builts a similarity matrix M(i,j) where the (i,j) value of the matrix for data
